@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Józsi a Villanyszerelő</title>
+  <meta name="description" content="Józsi a Villanyszerelő – gyors, megbízható villanyszerelés lakossági és kisebb ipari munkák.">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google Ads script helye: ide illeszd be a saját Google Ads kódod, ha készen van -->
+</head>
+<body>
+
+  <!-- FEJLÉC -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">Józsi a Villanyszerelő</h1>
+      <p class="site-tagline">Gyors, megbízható villanyszerelés – akár azonnali kiszállással</p>
+    </div>
+  </header>
+
+  <!-- FŐ TARTALOM -->
+  <main class="container layout">
+    <!-- BAL TARTALOM -->
+    <section class="content">
+      <article>
+        <h2>Rólam</h2>
+        <p>Józsi vagyok, több mint 15 éve foglalkozom villanyszereléssel. Lakossági és kisebb ipari munkákat vállalok, gyors kiszállással, korrekt árakkal és garanciával.</p>
+      </article>
+
+      <article>
+        <h2>Szolgáltatások</h2>
+        <ul>
+          <li>Hibaelhárítás</li>
+          <li>Biztosítéktábla csere</li>
+          <li>Új hálózat kiépítése</li>
+          <li>Lámpák, kapcsolók, konnektorok szerelése</li>
+          <li>Felújítások teljes villanyszerelése</li>
+        </ul>
+        <p><a href="szolgaltatasok.html" class="btn">Részletek</a></p>
+      </article>
+
+      <article>
+        <h2>Referencia munkák</h2>
+        <p>Megtekintheted a korábbi munkáimat a galériában.</p>
+        <p><a href="referencia.html" class="btn">Referencia galéria</a></p>
+      </article>
+
+      <article>
+        <h2>Kapcsolat</h2>
+        <p>Telefon: <strong>+36 XX XXX XXXX</strong><br>
+           Email: <a href="mailto:info@valami.hu">info@valami.hu</a></p>
+        <p><a href="kapcsolat.html" class="btn">Írj nekem</a></p>
+      </article>
+    </section>
+
+    <!-- JOBB OLDALI STICKY SÁV -->
+    <aside id="right-ads" class="sidebar">
+      <!-- Google Ads hely -->
+      <div class="google-ad-slot">
+        <!-- Ide illeszd a Google Ads kódot -->
+        <div class="ad-placeholder">Google Ads hely</div>
+      </div>
+
+      <!-- Saját rotáló doboz -->
+      <div id="zolteach-box" class="zolteach-box">
+        <div class="rotate-item">ZolTeach – Diagnosztikai oktatás</div>
+        <div class="rotate-item">ZOLaUTó – Autódiagnosztika</div>
+        <div class="rotate-item">Printful Webshop</div>
+        <div class="rotate-item">Weboldal készítés – kérj ajánlatot</div>
+      </div>
+
+      <!-- Kicsi feltűnő CTA -->
+      <div class="zolteach-ad">
+        <a href="https://zolteach.hu" target="_blank" rel="noopener noreferrer">
+          Tetszik ez az oldal? <strong>Kattints ide!</strong>
+        </a>
+      </div>
+    </aside>
+  </main>
+
+  <!-- LÁBLÉC -->
+  <footer class="site-footer">
+    <div class="container">
+      <div id="footer-ads" class="footer-ads">
+        <!-- Ide kerül a lábléc Google Ads kód -->
+        <div class="ad-placeholder">Google Ads hely</div>
+      </div>
+      <p class="credit">Készítette: ZolTeach</p>
+    </div>
+  </footer>
+
+  <!-- JS fájlok -->
+  <script src="js/rotate.js"></script>
+  <script src="js/ads.js"></script>
+</body>
+</html>
