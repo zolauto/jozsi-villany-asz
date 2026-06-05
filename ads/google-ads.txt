@@ -1,0 +1,5 @@
+# google-ads.txt példa
+# Ha a Google kéri, ide kerülnek a publisher adatok.
+# Példa sor: google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+
+# Ha nincs még publisher ID, hagyd üresen vagy töltsd ki később.
