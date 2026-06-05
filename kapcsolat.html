@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kapcsolat — Józsi a Villanyszerelő</title>
+  <meta name="description" content="Kapcsolatfelvétel Józsival: telefon, email és ajánlatkérés.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- FEJLÉC -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">Józsi a Villanyszerelő</h1>
+      <p class="site-tagline">Kapcsolat — gyors ajánlatkérés és kiszállás</p>
+    </div>
+  </header>
+
+  <!-- NAV -->
+  <nav class="container simple-nav">
+    <a href="index.html">Főoldal</a> ·
+    <a href="szolgaltatasok.html">Szolgáltatások</a> ·
+    <a href="referencia.html">Referencia</a> ·
+    <a href="arak.html">Árak</a>
+  </nav>
+
+  <!-- FŐ TARTALOM -->
+  <main class="container layout">
+    <section class="content">
+      <h2>Írj nekem</h2>
+      <p>Ha szeretnél ajánlatot kérni vagy időpontot egyeztetni, töltsd ki az alábbi űrlapot vagy hívd a megadott telefonszámot.</p>
+
+      <!-- Kapcsolat űrlap (egyszerű, mailto fallback) -->
+      <form id="contact-form" action="mailto:info@valami.hu" method="post" enctype="text/plain">
+        <label for="name">Név</label>
+        <input type="text" id="name" name="Név" placeholder="Teljes név" required>
+
+        <label for="phone">Telefon</label>
+        <input type="tel" id="phone" name="Telefon" placeholder="+36 XX XXX XXXX" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="Email" placeholder="email@pelda.hu">
+
+        <label for="message">Üzenet / rövid leírás</label>
+        <textarea id="message" name="Üzenet" rows="6" placeholder="Írd le röviden a problémát vagy a kérést" required></textarea>
+
+        <p class="form-note">Ha a böngésződ nem támogatja a mailto űrlapot, küldj emailt erre: <a href="mailto:info@valami.hu">info@valami.hu</a></p>
+
+        <button type="submit" class="btn">Küldés</button>
+      </form>
+
+      <hr>
+
+      <h3>Elérhetőségek</h3>
+      <p>Telefon: <strong>+36 XX XXX XXXX</strong><br>
+         Email: <a href="mailto:info@valami.hu">info@valami.hu</a><br>
+         Munkavégzés: H–V, 8:00–20:00 (egyeztetés szerint)</p>
+
+      <h3>Gyors tippek</h3>
+      <ul>
+        <li>Hiba esetén írj rövid leírást és küldj fotót a referencia oldalra feltöltéshez.</li>
+        <li>Az árajánlat pontosításához helyszíni felmérés szükséges.</li>
+      </ul>
+    </section>
+
+    <!-- JOBB OLDALI SÁV -->
+    <aside id="right-ads" class="sidebar">
+      <div class="google-ad-slot">
+        <div class="ad-placeholder">Google Ads hely</div>
+      </div>
+
+      <div id="zolteach-box" class="zolteach-box">
+        <div class="rotate-item">ZolTeach – Diagnosztikai oktatás</div>
+        <div class="rotate-item">ZOLaUTó – Autódiagnosztika</div>
+        <div class="rotate-item">Weboldal készítés – kérj ajánlatot</div>
+      </div>
+
+      <div class="zolteach-ad">
+        <a href="https://zolteach.hu" target="_blank" rel="noopener noreferrer">
+          Tetszik ez az oldal? <strong>Kattints ide!</strong>
+        </a>
+      </div>
+    </aside>
+  </main>
+
+  <!-- LÁBLÉC -->
+  <footer class="site-footer">
+    <div class="container">
+      <div id="footer-ads" class="footer-ads">
+        <div class="ad-placeholder">Google Ads hely</div>
+      </div>
+      <p class="credit">Készítette: ZolTeach</p>
+    </div>
+  </footer>
+
+  <!-- JS (opcionális: egyszerű űrlapellenőrzés) -->
+  <script>
+    (function(){
+      const form = document.getElementById('contact-form');
+      form.addEventListener('submit', function(e){
+        // Egyszerű kliensoldali ellenőrzés: telefon és név kötelező
+        const name = document.getElementById('name').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        if(!name || !phone){
+          e.preventDefault();
+          alert('Kérlek add meg a neved és a telefonszámod.');
+        }
+        // Ha szeretnéd, ide lehet bővíteni AJAX küldést vagy backend endpointot.
+      });
+    })();
+  </script>
+</body>
+</html>
