@@ -7,7 +7,7 @@ html,body { height: 100%; font-family: "Segoe UI", Roboto, "Helvetica Neue", Ari
 .site-header { background:#0b5a8a; color:#fff; padding:18px 0; box-shadow:0 2px 6px rgba(0,0,0,0.06); }
 .site-title { font-size:1.6rem; font-weight:700; margin-bottom:6px; color:#adff2f; }
 .site-tagline { font-size:0.95rem; opacity:0.92; color:#d2ff96; }
-.big-a { font-size: 4rem; font-weight: 900; color: #adff2f !important; vertical-align: middle; display: inline-block; }
+.big-a { font-size: 3.5rem; font-weight: 900; color: #adff2f !important; vertical-align: baseline; display: inline-block; line-height: 1; margin: 0 4px; }
 
 /* Layout: tartalom + jobb oldali sáv */
 .layout { display:flex; gap:24px; align-items:flex-start; padding:22px 0; }
