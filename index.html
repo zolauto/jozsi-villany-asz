@@ -92,5 +92,39 @@
   <!-- JS fájlok -->
   <script src="js/rotate.js"></script>
   <script src="js/ads.js"></script>
+
+  <!-- HÁTTÉRKÉP AUTOMATIKUS VÁLTOZTATÁSA 3 PERCENKÉNT -->
+  <script>
+    (function() {
+      // A 8 darab háttérkép pontos útvonala a mappádból
+      const hatterek = [
+        'images/background/joszi-hatterkep1.jpg',
+        'images/background/joszi-hatterkep2.jpg',
+        'images/background/joszi-hatterkep3.jpg',
+        'images/background/joszi-hatterkep4.jpg',
+        'images/background/joszi-hatterkep5.jpg',
+        'images/background/joszi-hatterkep6.jpg',
+        'images/background/joszi-hatterkep7.jpg',
+        'images/background/joszi-hatterkep8.jpg'
+      ];
+      
+      let aktualisIndex = 0;
+      
+      function kepValtas() {
+        // Beállítja a következő képet a body hátterének
+        document.body.style.backgroundImage = `url('${hatterek[aktualisIndex]}')`;
+        // Lép a következő képre, ha a végére ért, kezdi elölről
+        aktualisIndex = (aktualisIndex + 1) % hatterek.length;
+      }
+      
+      // Első kép azonnali betöltése az oldal megnyitásakor
+      kepValtas();
+      
+      // Időzítés beállítása: 180000 ezredmásodperc = 3 perc
+      setInterval(kepValtas, 180000);
+    })();
+  </script>
+
+  
 </body>
 </html>
