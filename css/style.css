@@ -1,9 +1,10 @@
 /* Alap reset és tipográfia */
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html,body { height: 100%; font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color:#222; background: #0b0d10 no-repeat center center fixed; background-size: cover; transition: background-image 1s ease-in-out; }
+html,body { height: 100%; font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color:#ffffff; background: #0b0d10 no-repeat center center fixed; background-size: cover; transition: background-image 1s ease-in-out; }
 
-.container { max-width:1100px; margin:0 auto; padding:18px; background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(5px); border-radius: 8px; }
-
+/* FŐ DOBOZ: 10%-os finom áttetszőség, a belső fehérségek törlésével */
+.container { max-width:1100px; margin:0 auto; padding:18px; background: rgba(255, 255, 255, 0.10); backdrop-filter: blur(4px); border-radius: 8px; }
+.layout, .content, .sidebar, article { background: transparent !important; background-color: transparent !important; color: #ffffff !important; }
 
 /* Fejléc */
 .site-header { background:#0b5a8a; color:#fff; padding:18px 0; box-shadow:0 2px 6px rgba(0,0,0,0.06); }
